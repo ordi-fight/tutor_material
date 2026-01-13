@@ -1,4 +1,4 @@
-Linked List - Recursion
+**Linked List - Recursion**
 
 24\. Swap Nodes in Pairs 
 
@@ -12,7 +12,7 @@ Linked List - Recursion
 
 
 
-Binary Tree - Recursion
+**Binary Tree - Recursion**
 
 226\. Invert Binary Tree 
 
@@ -22,7 +22,7 @@ Binary Tree - Recursion
 
 
 
-Backtracking - Recursion
+**Backtracking - Recursion**
 
 78\. Subsets 
 
@@ -32,7 +32,7 @@ Backtracking - Recursion
 
 
 
-Recursion
+**Recursion**
 
 394\. Decode String
 
