@@ -1,40 +1,40 @@
 Linked List - Recursion
 
-24\. Swap Nodes in Pairs - [x]
+- [x] 24\. Swap Nodes in Pairs 
 
-21\. Merge Two Sorted Lists - [ ]
+- [ ] 21\. Merge Two Sorted Lists 
 
-203\. Remove Linked List Elements - [ ]
+- [ ] 203\. Remove Linked List Elements 
 
-25\. Reverse Nodes in k-Group - [ ]
+- [ ] 25\. Reverse Nodes in k-Group 
 
 
 
 Binary Tree - Recursion
 
-226\. Invert Binary Tree - [x]
+- [x] 226\. Invert Binary Tree 
 
-104\. Maximum Depth of Binary Tree - [x]
+- [x] 104\. Maximum Depth of Binary Tree 
 
-257\. Binary Tree Paths - [x]
+- [x] 257\. Binary Tree Paths 
 
 
 
 Backtracking - Recursion
 
-234\. Palindrome Linked List - [ ]
+- [ ] 234\. Palindrome Linked List 
 
-78\. Subsets - [x]
+- [x] 78\. Subsets 
 
-17\. Letter Combinations of a Phone Number - [ ]
+- [ ] 17\. Letter Combinations of a Phone Number 
 
-37\. Sudoku Solver - [ ]
+- [ ] 37\. Sudoku Solver 
 
 
 
 Recursion
 
-394\. Decode String - [ ]
+- [ ] 394\. Decode String 
 
 
 
