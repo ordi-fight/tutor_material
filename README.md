@@ -20,7 +20,7 @@
 - [Solved] 104 Maximum Depth of Binary Tree
 - [Solved] 226 Invert Binary Tree
 - [Solved] 257 Binary Tree Paths
-- 108 Convert Sorted Array to Binary Search Tree
+- [Solved]108 Convert Sorted Array to Binary Search Tree
 - 109 Convert Sorted List to Binary Search Tree
 
 ### Recursion

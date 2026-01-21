@@ -4,11 +4,11 @@ Linked List - Recursion
 
 - [ ] 21\. Merge Two Sorted Lists 
 
-- [ ] 203\. Remove Linked List Elements 
+- [x] 203\. Remove Linked List Elements 
 
-- [ ] 25\. Reverse Nodes in k-Group 
+- [x] 25\. Reverse Nodes in k-Group 
 
-- [ ] 234\. Palindrome Linked List 
+- [x] 234\. Palindrome Linked List 
 
 Binary Tree - Recursion
 
