@@ -12,9 +12,9 @@
 - [Solved] 206 Reverse Linked List
 - [Solved] 24 Swap Nodes in Pair
 - 21 Merge Two Sorted List
-- 203 Remove Linked List Elements
-- 25 Reverse Nodes in k-Groups
-- 234 Palindrome Linked List
+- [Solved]203 Remove Linked List Elements
+- [Solved]25 Reverse Nodes in k-Groups
+- [Solved]234 Palindrome Linked List
 
 ### Tree
 - [Solved] 104 Maximum Depth of Binary Tree
@@ -29,7 +29,7 @@
 
 ### Backtracking
 - [Solved] 78 Subsets
-- 17 Letter Combinations of a Phone Number
+- [Solved]17 Letter Combinations of a Phone Number
 - 77 Combinations
 - 37 Sudoku Solver
 - 90 Subsets II
