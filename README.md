@@ -30,9 +30,9 @@
 ### Backtracking
 - [Solved] 78 Subsets
 - [Solved]17 Letter Combinations of a Phone Number
-- 77 Combinations
+- [Solved]77 Combinations
 - 37 Sudoku Solver
-- 90 Subsets II
+- [Solved]90 Subsets II
 
 ## Judge Girl
 
