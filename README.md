@@ -25,7 +25,7 @@
 
 ### Recursion
 - [Solved] 509 Fibonacci Number
-- 394 Decode String
+- [Solved]394 Decode String
 
 ### Backtracking
 - [Solved] 78 Subsets
