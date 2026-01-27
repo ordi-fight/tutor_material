@@ -15,6 +15,9 @@
 - [Solved]203 Remove Linked List Elements
 - [Solved]25 Reverse Nodes in k-Groups
 - [Solved]234 Palindrome Linked List
+- 82 Remove Duplicates from Sorted List II
+- 83 Remove Duplicates from Sorted List
+- 86 Partition List
 
 ### Tree
 - [Solved] 104 Maximum Depth of Binary Tree
@@ -22,6 +25,14 @@
 - [Solved] 257 Binary Tree Paths
 - [Solved]108 Convert Sorted Array to Binary Search Tree
 - [Solved]109 Convert Sorted List to Binary Search Tree
+- 95 Unique Binary Search Trees II
+- 96 Unique Binary Search Trees
+
+### DFS
+- 94 Binary Tree Inorder Traversal
+- 112 Path Sum
+- 113 Path Sum II
+- 79 Word Search
 
 ### Recursion
 - [Solved] 509 Fibonacci Number
