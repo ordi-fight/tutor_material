@@ -18,13 +18,14 @@
 - 82 Remove Duplicates from Sorted List II
 - 83 Remove Duplicates from Sorted List
 - 86 Partition List
+- 
 
 ### Tree
 - [Solved] 104 Maximum Depth of Binary Tree
 - [Solved] 226 Invert Binary Tree
 - [Solved] 257 Binary Tree Paths
 - [Solved]108 Convert Sorted Array to Binary Search Tree
-- [Solved]109 Convert Sorted List to Binary Search Tree
+- 109 Convert Sorted List to Binary Search Tree
 - 95 Unique Binary Search Trees II
 - 96 Unique Binary Search Trees
 
@@ -44,6 +45,8 @@
 - [Solved]77 Combinations
 - 37 Sudoku Solver
 - [Solved]90 Subsets II
+- 46 Permutations
+- 47 Permutations II
 
 ## Judge Girl
 
