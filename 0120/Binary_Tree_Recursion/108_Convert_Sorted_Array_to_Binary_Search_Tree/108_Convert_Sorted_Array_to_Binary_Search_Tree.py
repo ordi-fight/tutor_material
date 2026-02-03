@@ -36,6 +36,8 @@ class Solution:
         center.right = self.sortedArrayToBST(nums[len(nums)//2+1:])
         
       return center
+    
+# 少一點 if elif
 def TreeNode_format(node):
  
     if node == None:
