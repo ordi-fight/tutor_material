@@ -35,6 +35,12 @@
 - 112 Path Sum
 - 113 Path Sum II
 - 79 Word Search
+- 130 Surrounded Regions
+- 695 Max Area of Island
+- 200 Number of Islands
+- 1971 Find if Path Exists in Graph
+- 797 All Paths From Source to Target
+- 133 Clone Graph
 
 ### Recursion
 - [Solved] 509 Fibonacci Number
