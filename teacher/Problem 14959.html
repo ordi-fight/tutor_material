@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+<title>Problem 14959</title>
+
+    <!-- bootstrap, bootwatch CSS -->
+    
+    <link rel="stylesheet" href="/static/bootswatch/cerulean/bootstrap.min.css">
+    
+    <!-- Magnific Popup core CSS -->
+    <link rel="stylesheet" href=/static/magnific-popup/dist/magnific-popup.css>
+    <link rel="stylesheet" href=/static/css/index.css media="screen">
+    <link rel="stylesheet" href=/static/css/mfp-fade.css media="screen">
+    <script src=/static/jquery/dist/jquery.min.js></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse newbar" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">NTHU Online Judge</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-text"><a href="/contest/">Contest</a></li>
+            <li class="nav-text"><a href="/problem/">Problem</a></li>
+            <li class="nav-text"><a href="/users/submit/">Submit</a></li>
+            <li class="nav-text"><a href="/status/?username=114062208">Status</a></li>
+            <!--li class="nav-text"><a href="/group/list/">Group</a></li-->
+            <!--
+            <li class="dropdown nav-text">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-expanded="false">User
+                 <span class="caret"></span>
+               </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">User List</a></li>
+                <li><a href="#">User Rank</a></li>
+              </ul>
+            </li>
+            -->
+            <li class="nav-text">
+              <form class="navbar-form">
+                <div class="form-group">
+                  <input id="globalNavigation" type="text" class="form-control" placeholder="Search Site">
+                </div>
+              </form>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li>
+              <a href=/users/notification/ id="notification">
+                
+                <img src=/static/images/bell_blue.png  id="notification_img"
+                     title="You have 8 unread notifications."/>
+                <div id="notification_circle" class="center">
+                  <b id="number">
+                    
+                      8
+                    
+                  </b>
+                </div>
+                
+              </a>
+            </li>
+            
+            
+            <li class="nav-text-auth">
+              <a href="/users/profile/114062208">
+                <i id="name-text">114062208</i>
+              </a>
+            </li>
+            <li class="nav-text-auth"><a href="/users/logout/">Logout</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- wrap all page elements to div -->
+    <div class="wrap-body container-fluid">
+      
+
+      
+<div class="container" id="Body">
+  
+<div class="pname_block panel">
+  <div class="left">
+    <div class="pname">
+      <h2>14959 - Cat Mouse Maze &nbsp;&nbsp;
+        
+      </h2>
+    </div>
+  </div>
+  <div class="right">
+    <div class="problem-option">
+      <a href="/status/?pid=14959">Status</a> &nbsp;|&nbsp;
+      <!-- <a>Printable </a> &nbsp;|&nbsp; -->
+      <!-- <a>Rank</a> &nbsp;|&nbsp; -->
+      <a data-toggle='modal' data-target='#limit_14959'>Limits</a>
+      
+        <a class="btn btn-primary" href="/users/submit/14959">Submit</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class='modal fade' id='limit_14959'>
+  <div class='modal-dialog modal-sm'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal'>
+          <span aria-hidden='true'>&times;</span>
+          <span class='sr-only'>Close</span>
+        </button>
+        <h4 class='modal-title'>Limits</h4>
+      </div>
+      <div class='modal-body'>
+        <table class='table'>
+          <tbody>
+            <tr>
+              <td></td>
+              <th>Time</th>
+              <th>Memory</th>
+              
+              <tr>
+                <th>Case 1</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 2</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 3</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 4</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 5</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 6</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 7</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+              <tr>
+                <th>Case 8</th>
+                <td>2 sec</td>
+                <td>1024 MB</td>
+              </tr>
+              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width:75%; float:left">
+  <h3>Description</h3>
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">Please implement the following game by completing all methods marked with <strong>TODO</strong>&nbsp;in the provided&nbsp;code.</div>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">Please submit with C++17.</div>
+
+<p>&nbsp;</p>
+
+<p>A cat and a mouse are trapped in a <tt>20x20</tt>&nbsp;maze. Each cell is one of the following types:</p>
+
+<ul>
+	<li><code>&#39;S&#39;</code>: starting position</li>
+	<li><code>&#39;E&#39;</code>: exit position</li>
+	<li><code>&#39;#&#39;</code>: wall</li>
+	<li><code>&#39;.&#39;</code>: empty cell</li>
+</ul>
+
+<p>Two cells are adjacent if they share a side, that is, if one is directly above, below, to the left of, or to the right of the other.</p>
+
+<p><span style="color:#FF0000">The cat and the mouse&nbsp;are not allowed to be in the same cell <strong>at any time</strong></span>.</p>
+
+<p>The cat starts at <code><span style="font-family:monospace">&#39;S&#39;</span></code> and the mouse starts at <code><span style="font-family:monospace">&#39;E&#39;</span></code>.</p>
+
+<hr />
+<p>Initially, the entire maze is unknown to both the cat and the mouse.</p>
+
+<p>The game proceeds in turns. In each turn, the cat and the mouse act in the following order:</p>
+
+<ol>
+	<li>The cat sees and memorizes the adjacent cells.</li>
+	<li>The cat moves to a non-wall&nbsp;adjacent cell, or <span style="color:#FF0000">stays in the same cell</span>.</li>
+	<li>The mouse sees and memorizes the adjacent cells.</li>
+	<li>The mouse moves to a non-wall&nbsp;adjacent cell, or <span style="color:#FF0000">stays in the same cell</span>.</li>
+</ol>
+
+<p><span style="color:#FF0000">They know the current turn&nbsp;number (step), the position of the other, and the position of the exit</span>.</p>
+
+<p>Your goal is to make&nbsp;the cat reach the exit cell&nbsp;within 4000 turns. This is guaranteed to be possible for all given test cases.</p>
+
+<p>&nbsp;</p>
+
+<p><big>HINT</big></p>
+
+<p>The following strategy works.</p>
+
+<p>Steps 0&ndash;799: The cat explores all reachable cells without entering the mouse&rsquo;s cell. (The mouse stays still.)</p>
+
+<p>Steps 800&ndash;1599: The cat moves to a <span style="color:#0000FF">discovered</span> reachable that is <span style="color:#0000FF">farthest</span> from <code><span style="font-family:monospace">&#39;E&#39;</span></code>.</p>
+
+<p>Steps 1600&ndash;2399: The mouse explores all reachable cells without entering the cat&rsquo;s cell.</p>
+
+<p>Steps 2400&ndash;3199: The mouse moves to a <span style="color:#0000FF">discovered</span> reachable cell that <span style="color:#0000FF">does not block the cat</span> from reaching <code><span style="font-family:monospace">&#39;E&#39;</span></code>.</p>
+
+<ul>
+	<li>To find such a cell, temporarily treat each candidate cell as a wall and check whether the cat can still reach <code>&#39;E&#39;</code>.</li>
+</ul>
+
+<p>Steps 3200&ndash;3999: The cat moves to <code><span style="font-family:monospace">&#39;E&#39;</span></code>.</p>
+
+<p>&nbsp;</p>
+
+<p><big>Code</big></p>
+
+<pre>
+<code>#include &lt;vector&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+#include &lt;queue&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+const int SIZE = 20;
+const int MAX_STEPS = 4000;
+const int INF = 1000000000;
+
+enum class Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+    Stay
+};
+
+struct Pos {
+    int r, c;
+
+    Pos operator+(Direction dir) const {
+        switch (dir) {
+            case Direction::Up:
+                return {r - 1, c};
+            case Direction::Down:
+                return {r + 1, c};
+            case Direction::Left:
+                return {r, c - 1};
+            case Direction::Right:
+                return {r, c + 1};
+        }
+
+        return {r, c}; // Direction::Stay
+    }
+
+    bool operator==(const Pos&amp; other) const {
+        return r == other.r and c == other.c;
+    }
+
+    bool operator!=(const Pos&amp; other) const {
+        return r != other.r or c != other.c;
+    }
+};
+
+class MemoryMap {
+private:
+    char memory[SIZE][SIZE];
+    int visited[SIZE][SIZE];
+
+public:
+    MemoryMap(Pos startPos, char startCell) {
+        fill(memory[0], memory[0] + SIZE * SIZE, &#39;?&#39;);
+        memory[startPos.r][startPos.c] = startCell;
+
+        resetVisited(startPos);
+    }
+
+    char getCell(Pos p) const {
+        return memory[p.r][p.c];
+    }
+
+    void setCell(Pos p, char cell) {
+        memory[p.r][p.c] = cell;
+    }
+
+    bool knownOpen(Pos p) const {
+        return memory[p.r][p.c] != &#39;#&#39; and memory[p.r][p.c] != &#39;?&#39;;
+    }
+
+    void resetVisited(Pos pos) {
+        fill(visited[0], visited[0] + SIZE * SIZE, 0);
+        visited[pos.r][pos.c] = 2;
+    }
+
+    // Performs one step of a DFS walk and returns the chosen direction.
+    // Remember to call resetVisited(pos) before starting a new DFS search.
+    Direction dfsNextDirection(Pos&amp; pos, Pos target, Pos untouchable) {
+        /*
+            This method performs one step of a DFS walk from pos through known open cells.
+            It avoids untouchable when visiting new cells, and stops when it reaches target.
+
+            The parameter pos is the current position of the player. This method updates
+            pos to the next position chosen by DFS, and returns the direction of that move.
+
+            The parameter untouchable is usually the position of the other player
+            (cat / mouse).
+
+            To use this method:
+            1. Call resetVisited(pos) before starting a new DFS search.
+            2. Repeatedly call dfsNextDirection(pos, target, untouchable).
+            3. If target or untouchable changes, call resetVisited(pos) before continuing.
+            4. If target is reached, this method returns Direction::Stay.
+            5. To explore all reachable known cells, use an impossible target such as {-1, -1}.
+        */
+
+        Direction dirs[4] = {
+            Direction::Up,
+            Direction::Down,
+            Direction::Left,
+            Direction::Right
+        };
+
+        if (pos == target) {
+            return Direction::Stay;
+        }
+
+        for (int i = 0; i &lt; 4; i++) {
+            Pos p = pos + dirs[i];
+
+            if (knownOpen(p) and visited[p.r][p.c] == 0 and p != untouchable) {
+                visited[p.r][p.c] = visited[pos.r][pos.c] + 1;
+                pos = p;
+                return dirs[i];
+            }
+        }
+
+        for (int i = 0; i &lt; 4; i++) {
+            Pos p = pos + dirs[i];
+
+            if (visited[p.r][p.c] == visited[pos.r][pos.c] - 1) {
+                visited[pos.r][pos.c] = -1;
+                pos = p;
+                return dirs[i];
+            }
+        }
+
+        return Direction::Stay;
+    }
+
+    // TODO: Use BFS to compute shortest distances from start to all known open cells.
+    void computeDistance(Pos start, int distance[SIZE][SIZE]) const;
+};
+
+class Cat {
+private:
+    MemoryMap memory_map;
+    Pos pos;
+    Pos target;
+
+    // HINT(optional): You may use these variables if you need them.
+    int phase;
+    int direction;
+    int state[SIZE];
+
+public:
+    // TODO: Initialize the cat.
+    Cat(Pos startPos);
+    // TODO: Update the cat&#39;s memory using the visible neighboring cells.
+    void see(char up, char down, char left, char right);
+    // TODO: Move the cat and return the chosen direction.
+    Direction move(int step, Pos mousePos, Pos exitPos);
+};
+
+class Mouse {
+private:
+    MemoryMap memory_map;
+    Pos pos;
+    Pos target;
+
+    // HINT(optional): You may use these variables if you need them.
+    int phase;
+    int direction;
+    int state[SIZE];
+
+public:
+    // TODO: Initialize the mouse.
+    Mouse(Pos startPos);
+    // TODO: Update the mouse&#39;s memory using the visible neighboring cells.
+    void see(char up, char down, char left, char right);
+    // TODO: Move the mouse and return the chosen direction.
+    Direction move(int step, Pos catPos, Pos exitPos);
+};
+
+class Game {
+private:
+    const vector&lt;string&gt; maze;
+    Pos catPos;
+    Cat cat;
+    Pos exitPos;
+    Pos mousePos;
+    Mouse mouse;
+    string catSteps;
+    string mouseSteps;
+
+    char getCell(Pos p) const {
+        return maze[p.r][p.c];
+    }
+
+    Pos findCell(char cell) const {
+        for (int i = 0; i &lt; SIZE; i++) {
+            if (auto it = maze[i].find(cell); it != string::npos) {
+                return {i, int(it)};
+            }
+        }
+
+        return {-1, -1};
+    }
+
+    bool success() const {
+        return catPos == exitPos;
+    }
+
+    char directionToChar(Direction dir) const {
+        switch (dir) {
+            case Direction::Up:
+                return &#39;U&#39;;
+            case Direction::Down:
+                return &#39;D&#39;;
+            case Direction::Left:
+                return &#39;L&#39;;
+            case Direction::Right:
+                return &#39;R&#39;;
+            case Direction::Stay:
+                return &#39;S&#39;;
+        }
+
+        return &#39;S&#39;;
+    }
+
+    bool illegal(Pos p) const {
+        return p.r &lt; 0 or p.r &gt;= SIZE or p.c &lt; 0 or p.c &gt;= SIZE or getCell(p) == &#39;#&#39;;
+    }
+
+public:
+    Game(const vector&lt;string&gt;&amp; inputMaze)
+        : maze(inputMaze),
+          catPos(findCell(&#39;S&#39;)),
+          cat(catPos),
+          exitPos(findCell(&#39;E&#39;)),
+          mousePos(exitPos),
+          mouse(mousePos)
+    {}
+
+    void play() {
+        for (int step = 0; step &lt; MAX_STEPS; step++) {
+            cat.see(
+                getCell(catPos + Direction::Up),
+                getCell(catPos + Direction::Down),
+                getCell(catPos + Direction::Left),
+                getCell(catPos + Direction::Right)
+            );
+
+            Direction catDir = cat.move(step, mousePos, exitPos);
+            catSteps += directionToChar(catDir);
+            catPos = catPos + catDir;
+
+            if (catPos == mousePos or illegal(catPos) or success()) {
+                break;
+            }
+
+            mouse.see(
+                getCell(mousePos + Direction::Up),
+                getCell(mousePos + Direction::Down),
+                getCell(mousePos + Direction::Left),
+                getCell(mousePos + Direction::Right)
+            );
+
+            Direction mouseDir = mouse.move(step, catPos, exitPos);
+            mouseSteps += directionToChar(mouseDir);
+            mousePos = mousePos + mouseDir;
+
+            if (mousePos == catPos or illegal(mousePos)) {
+                break;
+            }
+        }
+
+        cout &lt;&lt; catSteps &lt;&lt; &#39;\n&#39; &lt;&lt; mouseSteps &lt;&lt; &#39;\n&#39;;
+    }
+};
+
+int main() {
+    vector&lt;string&gt; inputMaze(SIZE);
+
+    for (string&amp; row : inputMaze) {
+        cin &gt;&gt; row;
+    }
+
+    Game game(inputMaze);
+    game.play();
+
+    return 0;
+}
+
+</code></pre>
+
+  <h3>Input</h3>
+  <p>(The input is already handled by the provided C++ code.)</p>
+
+<p>The input contains exactly <tt>20</tt> lines.</p>
+
+<p>Each line contains exactly <span style="font-family:monospace">20</span> characters, representing the maze.</p>
+
+<p>The maze contains exactly one <code><span style="font-family:monospace">&#39;S&#39;</span></code>&nbsp;and exactly one <span style="font-family:monospace">&#39;</span><code>E&#39;</code>.</p>
+
+<p>The outer boundary of the maze is guaranteed to be <code><span style="font-family:monospace">&#39;#&#39;</span></code>. (See the sample input for an example.)</p>
+
+<p>&nbsp;</p>
+
+<p><big>Subtasks</big></p>
+
+<ul>
+	<li>Testcase 1 is the sample input.</li>
+	<li>Testcase 2, 3, and 4 have the exit cell adjacent to at least two empty cells.</li>
+	<li>Testcase 5, 6, 7, and 8 have no extra constraints.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+  <h3>Output</h3>
+  <p>(The output is already handled by the provided C++ code.)</p>
+
+<p>The provided main function prints two lines:</p>
+
+<ol>
+	<li>The cat&#39;s moves.</li>
+	<li>The mouse&#39;s moves.</li>
+</ol>
+
+<p>Each move is represented by one character:</p>
+
+<ul>
+	<li><code>&#39;U&#39;</code>: move up</li>
+	<li><code>&#39;D&#39;</code>: move down</li>
+	<li><code>&#39;L&#39;</code>: move left</li>
+	<li><code>&#39;R&#39;</code>: move right</li>
+	<li><code>&#39;S&#39;</code>: stay in the same cell</li>
+</ul>
+
+<p>The special judge accepts the output if, after simulating the two strings, all moves are legal, the cat and mouse are never in the same cell, and the cat reaches <code>&#39;E&#39;</code>&nbsp;within 4000 steps. Otherwise, the special judge rejects the output.</p>
+
+  <h3>Sample Input&nbsp;&nbsp;<a class='btn btn-primary downloadSampleInputButton' pid='14959'>Download</a></h3>
+  <div class='panel-body'>
+    <textarea id='14959_sampleIn' class='panel-body sampleIO' readonly>####################
+#SE_################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################
+####################</textarea>
+  </div>
+  <h3>Sample Output&nbsp;&nbsp;<a class='btn btn-primary downloadSampleOutputButton' pid='14959'>Download</a></h3>
+  <div class='panel-body'>
+    <textarea id='14959_sampleOut' class='panel-body sampleIO' readonly>SR
+R</textarea>
+  </div>
+  
+  
+  
+
+  <br>
+  <br>
+  <br>
+  <h4>
+    <a onclick="alert('Discuss not open yet')">Discuss</a>
+  </h4>
+  <br>
+  <br>
+  <br>
+</div>
+<script>
+var pid = 14959;
+</script>
+<script src="/static/problem/js/problem.js"></script>
+
+
+</div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="navbar navbar-inverse navbar-fixed-bottom sticky-footer container-fluid">
+        <div class="navbar-collapse collapse">
+          <p class="navbar-text col-lg-4">Contact us: nthucsoj@gmail.com</p>
+          <p class="navbar-text col-lg-6">© NTHU Online Judge 2015, Templates are from Bootswatch Project</p>
+          <p id="time" class="navbar-text">2026/05/31 18:44:32</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src=/static/bootstrap/dist/js/bootstrap.min.js></script>
+    <script src=/static/js/function.js></script>
+    <script src=/static/magnific-popup/dist/jquery.magnific-popup.min.js></script>
+    
+
+<script type="text/javascript">
+jQuery(function($) {
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+function sameOrigin(url) {
+    // test that a given url is a same-origin URL
+    // url could be relative or scheme relative or absolute
+    var host = document.location.host; // host + port
+    var protocol = document.location.protocol;
+    var sr_origin = '//' + host;
+    var origin = protocol + sr_origin;
+    // Allow absolute or scheme relative URLs to same origin
+    return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+        (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+        // or any other URL that isn't scheme relative or absolute i.e relative.
+        !(/^(\/\/|http:|https:).*/.test(url));
+}
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && sameOrigin(settings.url)) {
+            // Send the token to same-origin, relative URLs only.
+            // Send the token only if the method warrants CSRF protection
+            // Using the CSRFToken value acquired earlier
+            xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+        }
+    }
+});
+});
+</script>
+
+
+<script type="text/javascript" src="/static/autocomplete_light/django_admin.js"></script>
+<script type="text/javascript" src="/static/autocomplete_light/autocomplete.js"></script>
+<script type="text/javascript" src="/static/autocomplete_light/widget.js"></script>
+<script type="text/javascript" src="/static/autocomplete_light/addanother.js"></script>
+<script type="text/javascript" src="/static/autocomplete_light/text_widget.js"></script>
+<script type="text/javascript" src="/static/autocomplete_light/remote.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/autocomplete_light/style.css" />
+
+    <script src=/static/js/popup-setting.js></script>
+    <script src=/static/js/base.js></script>
+    <script src=/static/js/clock.js></script>
+    
+  <link rel="stylesheet" href="/static/problem/css/problem.css">
+
+  </body>
+</html>
